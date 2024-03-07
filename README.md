@@ -17,7 +17,7 @@ There are also two changes that I made in the client part.
 ## Test Run Result
 
 1. **Using a single servlet**
-![Alt text](pics/single-servlet-rabbitmq.png)
+![Alt text](https://github.com/zhan-xl/CS6650-Assignment2/blob/main/pics/single-servlet-rabbitmq.png)
 
 ![Alt text](pics/single-servlet-terminal.png)
 
