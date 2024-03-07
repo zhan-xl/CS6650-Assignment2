@@ -1,7 +1,7 @@
 # CS6650 Assignment2
 
 ## Repo URL
-[Link to GitHub](https://github.com/zhan-xl/CS6650-assignment1.git)
+[Link to GitHub](https://github.com/zhan-xl/CS6650-Assignment2.git)
 
 ## Client Design
 ### Overall structures and packages
