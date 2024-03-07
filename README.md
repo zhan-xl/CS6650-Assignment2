@@ -16,12 +16,28 @@ There are also two changes that I made in the client part.
 
 ## Test Run Result
 
-**Using a single servlet**
+1. **Using a single servlet**
+![Alt text](pics/single-servlet-rabbitmq.png)
+
+![Alt text](pics/single-servlet-terminal.png)
 
 **Using a load balancer with 2 servlets**
+![Alt text](pics/two-servlets-rabbitmq.png)
+
+![Alt text](pics/two-servlets-terminal.png)
 
 **Using a load balancer with 3 servlets**
+![Alt text](pics/three-servlets-rabbitmq.png)
+
+![Alt text](pics/three-servlets-terminal.png)
+
+**Using a load balancer with 4 servlets**
+![Alt text](pics/four-servlets-rabbitmq.png)
+
+![Alt text](pics/four-servlets-terminal.png)
 
 ## Conclusion
+1. The queue was never overflow in all cases. After diggin into how rabbitmq consumer works, by default it run multi-threading to prevent overloading the queue. In all my senarios, the consumer is running 4 threads. We can change the defauld number of threads by using a Executore service.
+2. With a load balancer, the differennce between 2 to 4 servlets is negligible.
 
 
