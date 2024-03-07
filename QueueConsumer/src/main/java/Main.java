@@ -32,7 +32,6 @@ public class Main {
 
     DeliverCallback deliverCallback = (consumerTag, delivery) -> {
       String message = new String(delivery.getBody(), "UTF-8");
-      System.out.println(Thread.activeCount());
     };
     channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> {
     });
